@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ToDoListController" spacing="10" style="-fx-padding: 20;">
+    <Label text="To-Do List" style="-fx-font-size: 20; -fx-font-weight: bold;" />
+    <VBox fx:id="taskContainer" spacing="5" style="-fx-padding: 10; -fx-border-color: #ccc; -fx-border-width: 1; -fx-border-radius: 5;" />
+    <HBox spacing="10">
+        <TextField fx:id="taskInput" promptText="Enter a new task..." />
+        <Button text="Add Task" onAction="#handleAddTask" />
+    </HBox>
+</VBox>
